@@ -12,7 +12,7 @@ const tabs = [
 export default function Home() {
     return (
         <>
-            <div className="py-12">
+            <div className="py-12 pb-20">
                 <Container>
                     <div className="flex items-center justify-between mb-6">
                         <h2 className="text-xl font-black text-black">
@@ -23,10 +23,6 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-5 gap-4 gap-y-6">
-                        <MovieCard />
-                        <MovieCard />
-                        <MovieCard />
-                        <MovieCard />
                         <MovieCard />
                         <MovieCard />
                         <MovieCard />
