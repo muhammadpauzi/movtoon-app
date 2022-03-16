@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import movieImage from '../img/1.jpg';
 
 export default function MovieCard() {
     return (
-        <a
+        <Link
             to="/movies/where-the-wild-things-are"
             className="group border-b border-gray-100"
         >
@@ -15,6 +16,6 @@ export default function MovieCard() {
                     Where The Wild Things Are
                 </h2>
             </div>
-        </a>
+        </Link>
     );
 }
