@@ -9,7 +9,7 @@ export default function NavbarNavigation({ navigation, isMobile }) {
                     href={item.href}
                     className={classNames(
                         isMobile ? 'block w-full py-2' : '',
-                        'text-sm font-bold uppercase text-gray-700 transition hover:text-violet-600'
+                        'text-sm font-medium text-gray-700 transition hover:text-violet-600'
                     )}
                 >
                     {item.name}
