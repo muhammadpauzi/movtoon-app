@@ -13,8 +13,8 @@ const navigation = [
 
 export default function Navbar() {
     return (
-        <Popover className="relative bg-white z-50">
-            <Container className="border-b-2 border-gray-100">
+        <Popover className="relative bg-white z-50 border-b-2 border-gray-100">
+            <Container>
                 <div className="flex justify-between items-center py-6">
                     <div className="flex justify-between items-center md:space-x-10">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
