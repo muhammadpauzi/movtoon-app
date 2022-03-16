@@ -1,12 +1,11 @@
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
 function App() {
     return (
         <>
             <Navbar />
-            <div className="h-screen bg-white">
-                <h1 className="text-white">Hello World</h1>
-            </div>
+            <Home />
         </>
     );
 }
