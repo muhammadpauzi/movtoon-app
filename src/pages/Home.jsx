@@ -14,8 +14,8 @@ export default function Home() {
         <>
             <div className="py-12 pb-20">
                 <Container>
-                    <div className="flex items-center justify-between mb-6">
-                        <h2 className="text-xl font-black text-black">
+                    <div className="flex items-center justify-between mb-6 flex-col md:flex-row">
+                        <h2 className="text-xl font-black text-black mb-5">
                             Spotlight This Month
                         </h2>
 

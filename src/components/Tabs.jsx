@@ -2,7 +2,7 @@ import { classNames } from '../utils';
 
 export default function Tabs({ tabs }) {
     return (
-        <div className="flex items-center space-x-4 text-sm">
+        <div className="flex items-center space-x-4 text-xs sm:text-sm">
             {tabs.map((tab, i) => {
                 return (
                     <a
