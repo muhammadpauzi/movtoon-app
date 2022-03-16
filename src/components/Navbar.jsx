@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import Logo from './Logo';
 import NavbarNavigation from './NavbarNavigation';
 import NavbarMenuButton from './NavbarMenuButton';
+import Container from './Container';
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -13,7 +14,7 @@ const navigation = [
 export default function Navbar() {
     return (
         <Popover className="relative bg-white z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 border-b-2 border-gray-100">
+            <Container className="border-b-2 border-gray-100">
                 <div className="flex justify-between items-center py-6">
                     <div className="flex justify-between items-center md:space-x-10">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -30,7 +31,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
 
             <Transition
                 as={Fragment}
