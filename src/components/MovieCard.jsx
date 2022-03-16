@@ -2,7 +2,10 @@ import movieImage from '../img/1.jpg';
 
 export default function MovieCard() {
     return (
-        <a href="" className="group border-b border-gray-100">
+        <a
+            to="/movies/where-the-wild-things-are"
+            className="group border-b border-gray-100"
+        >
             <div className="overflow-hidden shadow-lg shadow-slate-200">
                 <img src={movieImage} alt="" className="rounded w-full block" />
             </div>

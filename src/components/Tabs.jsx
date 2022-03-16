@@ -7,7 +7,7 @@ export default function Tabs({ tabs }) {
                 return (
                     <a
                         key={i}
-                        href={tab.href}
+                        to={tab.href}
                         className={classNames(
                             tab.active
                                 ? 'text-violet-600 border border-gray-200 bg-gray-100 p-2 px-3 rounded-md'
