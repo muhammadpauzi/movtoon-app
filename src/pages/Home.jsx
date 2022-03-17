@@ -12,7 +12,7 @@ const tabs = [
 export default function Home() {
     return (
         <>
-            <div className="py-12 pb-20">
+            <div className="min-h-screen py-12 pb-20">
                 <Container>
                     <div className="flex items-center justify-between mb-6 flex-col md:flex-row">
                         <h2 className="text-xl font-black text-black mb-5">
