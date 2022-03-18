@@ -1,6 +1,8 @@
 import Container from '../components/Container';
+import Heading from '../components/Heading';
 import MovieCard from '../components/MovieCard';
 import Tabs from '../components/Tabs';
+import WrapperBody from '../components/WrapperBody';
 
 const tabs = [
     { name: 'Latest', href: '/latest', active: true },
@@ -12,12 +14,10 @@ const tabs = [
 export default function Home() {
     return (
         <>
-            <div className="min-h-screen py-12 pb-20">
+            <WrapperBody>
                 <Container>
                     <div className="flex items-center justify-between mb-6 flex-col md:flex-row">
-                        <h2 className="text-xl font-black text-black mb-5">
-                            Spotlight This Month
-                        </h2>
+                        <Heading tag="h2" className="text-xl font-black text-black mb-5">Spotlight This Month</Heading>
 
                         <Tabs tabs={tabs} />
                     </div>
@@ -30,7 +30,7 @@ export default function Home() {
                         <MovieCard />
                     </div>
                 </Container>
-            </div>
+            </WrapperBody>
         </>
     );
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { classNames } from '../utils';
 
 export default function Tabs({ tabs }) {
@@ -5,7 +6,7 @@ export default function Tabs({ tabs }) {
         <div className="flex items-center space-x-4 text-xs sm:text-sm">
             {tabs.map((tab, i) => {
                 return (
-                    <a
+                    <Link
                         key={i}
                         to={tab.href}
                         className={classNames(
@@ -16,7 +17,7 @@ export default function Tabs({ tabs }) {
                         )}
                     >
                         {tab.name}
-                    </a>
+                    </Link>
                 );
             })}
         </div>
