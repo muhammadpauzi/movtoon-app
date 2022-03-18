@@ -1,11 +1,17 @@
 import { classNames } from '../utils';
 
-export default function Container({ className, children, ...props }) {
+export default function Container({
+    className,
+    maxClassName,
+    children,
+    ...props
+}) {
     return (
         <div
             className={classNames(
                 className || '',
-                'max-w-7xl mx-auto px-4 sm:px-6'
+                maxClassName || 'max-w-7xl',
+                'mx-auto px-4 sm:px-6'
             )}
             {...props}
         >

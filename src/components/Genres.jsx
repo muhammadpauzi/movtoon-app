@@ -3,7 +3,7 @@ import { classNames } from '../utils';
 
 export default function Genres({ genres }) {
     return (
-        <div className="flex items-center space-x-1 text-xs sm:text-sm mb-3">
+        <div className="flex items-center space-x-1 text-xs sm:text-sm mb-5">
             {genres.map((genre, i) => {
                 return (
                     <Link
